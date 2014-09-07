@@ -1,6 +1,6 @@
 {
     "name": "twitter",
-    "version": "v0.2.9",
+    "version": "v1.0.0-dev",
     "description": "Twitter API client library for node.js",
     "keywords": [
         "twitter",
@@ -25,11 +25,14 @@
         "keygrip": ">=0.1.7"
     },
     "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-release": "~0.6.0"
+        "mocha": "~1.16.0",
+        "should": "~2.1.1"
     },
     "engines": [
         "node >=0.2.0"
     ],
-    "main": "./lib/twitter"
+    "main": "./lib/twitter",
+    "scripts": {
+        "test": "mocha"
+    }
 }
